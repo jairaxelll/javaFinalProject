@@ -7,6 +7,8 @@ public class Reservation {
     private Date startDate;
     private Date endDate;
 
+    // Constructor
+    // getters y setters
     public Reservation(String id, Customer customer, Room room, Date startDate, Date endDate) {
         this.id = id; // Unique identifier for each reservation
         this.customer = customer;
@@ -43,7 +45,7 @@ public class Reservation {
         this.endDate = endDate;
     }
 
-    // Optionally add a method to display reservation details
+    // Metodo para obtener los detalles de la reserva
     public String getReservationDetails() {
         return "Reservation ID: " + id + "\nCustomer: " + customer.getName() +
                "\nRoom Number: " + room.getRoomNumber() +

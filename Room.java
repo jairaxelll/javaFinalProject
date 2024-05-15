@@ -2,6 +2,8 @@ public abstract class Room {
     protected int roomNumber;
     protected double pricePerNight;
 
+    // Constructor
+    // getters y setters
     public Room(int roomNumber, double pricePerNight) {
         this.roomNumber = roomNumber;
         this.pricePerNight = pricePerNight;
@@ -17,20 +19,20 @@ public abstract class Room {
         return pricePerNight;
     }
 
-    public void setPricePNight(int pricePerNight) {
-        this.pricePerNight = pricePerNight;
-    }
-    // Add a method to set the price per night
+
+    // este es el el setter que no funciona
     public void setPricePerNight(double price) {
         this.pricePerNight = price;
     }
 }
 
+// Clases hijas
 class StandardRoom extends Room {
     public StandardRoom(int roomNumber, double pricePerNight) {
         super(roomNumber, pricePerNight);
     }
 
+//  Obtener el tipo de habitacion
     @Override
     public String getRoomType() {
         return "Standard";

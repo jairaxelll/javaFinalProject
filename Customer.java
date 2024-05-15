@@ -1,3 +1,5 @@
+// Se crea la clase Customer con los atributos name, id y contactInfo
+//getter y setter para cada atributo
 public class Customer {
     private String name;
     private String id;
